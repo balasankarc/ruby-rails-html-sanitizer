@@ -1,0 +1,24 @@
+Source: ruby-rails-html-sanitizer
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Balasankar C <balasankarc@autistici.org>
+Build-Depends: debhelper (>= 7.0.50~),
+               gem2deb,
+               ruby-loofah (>= 2.0)
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-rails-html-sanitizer.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-rails-html-sanitizer.git
+Homepage: https://github.com/rafaelfranca/rails-html-sanitizer
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-rails-html-sanitizer
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ruby-loofah (>= 2.0),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: This gem is responsible to sanitize HTML fragments in Rails applications.
+ HTML sanitization for Rails applications

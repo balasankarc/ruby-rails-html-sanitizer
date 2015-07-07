@@ -1,0 +1,3 @@
+---
+- test/scrubbers_test.rb
+- test/sanitizer_test.rb
